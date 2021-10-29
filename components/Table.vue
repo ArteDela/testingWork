@@ -22,34 +22,6 @@
 				<NuxtLink class	="table__item-link" :to = "`detail/${result.id}`">{{result.email}}</NuxtLink>
 			</div>
 		</div>
-		<!-- <table class="table__inner-table">
-			<tr>
-				<th class="table__inner-table-sorter">
-					<span>id</span>
-					<div class="table__inner-table-arrows">
-						<div class="table__inner-table-asc" @click="sortByIdAsc">
-							<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000"><path d="M24 24H0V0h24v24z" fill="none" opacity=".87"/><path d="M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6-1.41-1.41z"/></svg>
-						</div>
-						<div class="table__inner-table-desc" @click="sortByIdDesc">
-							<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000"><path d="M24 24H0V0h24v24z" fill="none" opacity=".87"/><path d="M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6-1.41-1.41z"/></svg>
-						</div>
-					</div>
-				</th>
-				<th>name</th>
-				<th>email</th>
-			</tr>
-			<tr v-for = "(result,index) in pagElements">
-				<td>
-					<NuxtLink :to = "`detail/${result.id}`">{{result.id}}</NuxtLink>
-				</td>
-				<td>
-					<NuxtLink :to = "`detail/${result.id}`">{{result.name}}</NuxtLink>
-				</td>
-				<td>
-					<NuxtLink :to = "`detail/${result.id}`">{{result.email}}</NuxtLink>
-				</td>
-			</tr>
-		</table> -->
 		<div class="table__pagination">
 			<div class="table__pagination-page"
 				v-for="(page,index) in pages"
